@@ -78,3 +78,14 @@ h3 {
 .p1 {
     text-align: center;
 }
+
+.d3 {
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.d3:hover{
+    color:green;
+}
