@@ -1,5 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
 <?php
 
-  phpinfo();
+
 
 ?>
+</html>
