@@ -20,7 +20,7 @@
 
 
 <div class="d1">
-  <div class="d2">
+  <div class="d3">
   <p class="p1">
   <?php
 echo date ("D M d, Y G:i a");
