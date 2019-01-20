@@ -23,6 +23,7 @@
   <div class="d3">
   <p class="p1">
   <?php
+  date_default_timezone_set("America/Denver");
 echo date ("D M d, Y G:i a");
 
 
