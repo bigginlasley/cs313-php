@@ -12,7 +12,7 @@
 
 <div class="bg_img-1">
   <div class="caption">
-  <span class="border">Comming Soon</span>
+  <span class="border">Coming Soon</span>
   </div>
 </div>
 
