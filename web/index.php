@@ -18,7 +18,7 @@
 
 <div class="d">
   <h3 class="p1">Snowmobiliing</h3>
-  <p>Imagine this, your sitting at the bottom of a mountain looking up at the unmarked snow. You're out in the cold open air. Feeling it sting your nose as you breate in. Feeling the seld glide over the powder. If you haven't exereinced this you're missing out. Snowmobilling is one of my favorite things to do during the winter. Dipping your sled cutting into the poweder as you turn up the mountain. Squeezing the throttle, feeling the sled cut deeper as it turns up the hill. Pressing down on your back foot making your sled cut tighter before taking off up the mountain. Unmarked snow, it's yours for the taking. </p>
+  <p>Imagine this, your sitting at the bottom of a mountain looking up at the unmarked snow. You're out in the cold open air. Feeling it sting your nose as you breathe in. Feeling the seld glide over the powder. If you haven't experienced this you're missing out. Snowmobilling is one of my favorite things to do during the winter. Dipping your sled cutting into the powder as you turn up the mountain. Squeezing the throttle, feeling the sled cut deeper as it turns up the hill. Pressing down on your back foot making your sled cut tighter before taking off up the mountain. Unmarked snow, it's yours for the taking. </p>
 </div>
 
 
