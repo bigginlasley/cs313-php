@@ -17,18 +17,23 @@ function setVar($name)
     {
         case "boots":
             $_SESSION["boot"] = "Adrenaline GTX Boot";
+            echo "$name function works";
             break;
         case "gloves":
             $_SESSION["gloves"] = "Summit Glove";
+            echo "$name function works";
             break;
         case "bibs":
             $_SESSION["bibs"] = "Lochsa";
+            echo "$name function works";
             break;
         case "goggles":
             $_SESSION["goggles"] = "Oculus Goggle";
+            echo "$name function works";
             break;
         case "sled":
             $_SESSION["sled"] = "Polaris PRO-RMK 850";
+            echo "$name function works";
             break;
     }
 }
@@ -151,13 +156,7 @@ if($_GET)
   </a>
 </div>
 
-<?php
 
-if (isset($_SESSION['boots']))
-{
-    echo "this function works";
-}
-?>
 
 
 
