@@ -65,7 +65,7 @@ if($_GET)
 
 <div class="bg_img-1">
   <div class="caption">
-  <span class="border">What will you do?</span>
+  <span class="border">Welcome</span>
   </div>
 </div>
 
