@@ -56,6 +56,7 @@ if (isset($_SESSION['sled'])) {
   <span class="border">Checkout</span>
   </div>
   </a>
+  <br>
   <div>
   <a href="browse_items.php">
   <div class="caption">
