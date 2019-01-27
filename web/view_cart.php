@@ -51,9 +51,14 @@ if (isset($_SESSION['sled'])) {
 
 
 <div class="bg_img-1">
-  <a href="view_cart.php">
+  <a href="Checkout.php">
   <div class="caption">
-  <span class="border">Go To Cart</span>
+  <span class="border">Checkout</span>
+  </div>
+  </a>
+  <a href="browse_items.php">
+  <div class="caption">
+  <span class="border">Back to Store</span>
   </div>
   </a>
 </div>
