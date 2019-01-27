@@ -29,7 +29,7 @@ echo date ("D M d, Y G:i a");
 
 ?>
     </p>
-    <a href="browse_items.php">
+    <a href="browse_items.php"> <span class="border">Shopping Cart</span></a>
   </div>
 </div>
 
