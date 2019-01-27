@@ -34,23 +34,53 @@ else{
     echo "Your cart is empty";
 }
 if (isset($_SESSION['boots'])) {
+    echo '<button Name="boots" id="boots" onClick='.'location.href="?boots=0"'.'>remove</button>';
     echo $_SESSION["boots"]."<br>";
 } 
 if (isset($_SESSION['gloves'])) {
+    echo '<button Name="gloves" id="gloves" onClick='.'location.href="?gloves=0"'.'>remove</button>';
     echo $_SESSION["gloves"]."<br>";
 } 
 if (isset($_SESSION['bibs'])) {
+    echo '<button Name="bibs" id="bibs" onClick='.'location.href="?bibs=0"'.'>remove</button>';
     echo $_SESSION["bibs"];
-    echo '<button Name="bibs" id="bibs" onClick='.'location.href="?bibs=1"'.'>add to cart</button>';
+    
 } 
 if (isset($_SESSION['goggles'])) {
+    echo '<button Name="goggles" id="goggles" onClick='.'location.href="?goggles=0"'.'>remove</button>';
     echo $_SESSION["goggles"]."<br>";
 } 
 if (isset($_SESSION['sled'])) {
+    echo '<button Name="sled" id="sled" onClick='.'location.href="?sled=0"'.'>remove</button>';
     echo $_SESSION["sled"]."<br>";
 } 
 
   ?>
+
+<?php
+function setVar($name)
+{
+    switch($name)
+    {
+        case "boots":
+            $_SESSION["boots"] = NULL;
+            break;
+        case "gloves":
+            $_SESSION["gloves"] = NULL;
+            break;
+        case "bibs":
+            $_SESSION["bibs"] = NULL;
+            break;
+        case "goggles":
+            $_SESSION["goggles"] = NULL;
+            break;
+        case "sled":
+            $_SESSION["sled"] = NULL;
+            break;
+    }
+}
+?>
+
 </div>
 
 <button Name="bibs" id="bibs" onClick='location.href="?bibs=1"'>add to cart</button>
