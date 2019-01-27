@@ -144,7 +144,7 @@ if($_GET)
 
 
 <div class="bg_img-1">
-  <a href="assignments.html">
+  <a href="view_cart.php">
   <div class="caption">
   <span class="border">Go To Cart</span>
   </div>
