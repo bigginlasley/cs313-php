@@ -34,7 +34,7 @@ else{
     echo "Your cart is empty";
 }
 if (isset($_SESSION['boots'])) {
-    echo '<button Name="boots" id="boots" onClick='.'location.href="?boots=1"'.'>remove</button>';
+    echo '<button Name="boots" id="boots" onClick='.'location.href="?boots=0"'.'>remove</button>';
     echo $_SESSION["boots"]."<br>";
 } 
 if (isset($_SESSION['gloves'])) {
