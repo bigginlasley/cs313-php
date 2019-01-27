@@ -63,19 +63,19 @@ function setVar($name)
     switch($name)
     {
         case "boots":
-            $_SESSION["boots"] = NULL;
+            $_SESSION['boots'] = NULL;
             break;
         case "gloves":
-            $_SESSION["gloves"] = NULL;
+            $_SESSION['gloves'] = NULL;
             break;
         case "bibs":
-            $_SESSION["bibs"] = NULL;
+            $_SESSION['bibs'] = NULL;
             break;
         case "goggles":
-            $_SESSION["goggles"] = NULL;
+            $_SESSION['goggles'] = NULL;
             break;
         case "sled":
-            $_SESSION["sled"] = NULL;
+            $_SESSION['sled'] = NULL;
             break;
     }
 }
