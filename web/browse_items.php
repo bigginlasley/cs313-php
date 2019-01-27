@@ -88,7 +88,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/boot.jpeg" alt="boots" height="256" width="256">
                             </div>
-                            <button Name="boots" id="boots">add to cart</button>
+                            <button Name="boots" id="boots" onClick='location.href="?boots=1"'>add to cart</button>
                         </div>
             </td>
             <td align="center">
@@ -157,7 +157,14 @@ if($_GET)
 </div>
 
 
+<?php
 
+if (isset($_SESSION['boots']))
+{
+    echo "clicked";
+}
+
+?>
 
 
 </body>
