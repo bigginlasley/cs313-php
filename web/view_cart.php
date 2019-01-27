@@ -13,10 +13,14 @@ session_start();
 <body data-gr-c-s-loaded="true">
 
 
+
+
 <div class="bg_img-1">
-  <div class="caption">
-  <span class="border">Cart</span>
+<a href="Checkout.php">
+<div class="caption">
+  <span class="border">Back to Store</span>
   </div>
+  </a>
 </div>
 
 
@@ -58,11 +62,6 @@ if (isset($_SESSION['sled'])) {
   </a>
   <br>
 
-  <a href="browse_items.php">
-  <div class="caption">
-  <span class="border">Back to Store</span>
-  </div>
-  </a>
 
 </div>
 
