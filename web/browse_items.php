@@ -151,7 +151,13 @@ if($_GET)
   </a>
 </div>
 
+<?php
 
+if (isset($_SESSION['boots']))
+{
+    echo "this function works";
+}
+?>
 
 
 
