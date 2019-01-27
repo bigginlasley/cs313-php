@@ -20,12 +20,12 @@ session_start();
 </div>
 
 <div class="d">
-  <h3 class="p1">Your Items</h3>
+  <h3 class="p1">Shipping Address</h3>
   <form action="confirmation.php" method="post">
   Street Address: <input type="text" name="address"><br>
-  City: <input type="text" name="city"><br>
-  State: <input type="text" name="state"><br>
-  Zip: <input type="text" name="zip"><br>
+  City:           <input type="text" name="city"><br>
+  State:          <input type="text" name="state"><br>
+  Zip:            <input type="text" name="zip"><br>
   <input type="submit">
 </div>
 
