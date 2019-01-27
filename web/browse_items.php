@@ -96,7 +96,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/glove.jpg" alt="gloves" height="256" width="256">
                             </div>
-                                <button Name="gloves" id="gloves">add to cart</button>
+                                <button Name="gloves" id="gloves" onClick='location.href="?gloves=1"'>add to cart</button>
                             
                         </div>
             </td>
@@ -111,7 +111,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/lochsa.jpeg" alt="bibs" height="256" width="256">
                             </div>
-                            <button Name="bibs" id="bibs">add to cart</button>
+                            <button Name="bibs" id="bibs" onClick='location.href="?bibs=1"'>add to cart</button>
                     </div>
             </td>
             <td align="center">
@@ -119,7 +119,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/goggles.jpeg" alt="goggles" height="256" width="256">
                             </div>
-                            <button Name="goggles" id="goggles">add to cart</button>
+                            <button Name="goggles" id="goggles" onClick='location.href="?goggles=1"'>add to cart</button>
                         </div>
             </td>
         </tr>
@@ -138,9 +138,9 @@ if($_GET)
                         <td align="center">
                                 <div>
                                         <div>
-                                                <img src ="pictures/sled.png" alt="bibs" height="256" width="256">
+                                                <img src ="pictures/sled.png" alt="sled" height="256" width="256">
                                         </div>
-                                        <button Name="sled" id="sled">add to cart</button>
+                                        <button Name="sled" id="sled" onClick='location.href="?sled=1"'> add to cart</button>
                                 </div>
                         </td>
                     </tr>
@@ -156,15 +156,6 @@ if($_GET)
   </a>
 </div>
 
-
-<?php
-
-if (isset($_SESSION['boots']))
-{
-    echo "clicked";
-}
-
-?>
 
 
 </body>
