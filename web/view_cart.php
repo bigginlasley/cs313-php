@@ -24,26 +24,27 @@ session_start();
   <h3 class="p1">Your Items</h3>
   <?php
   if (!empty($_SESSION['boots'])||!empty($_SESSION['gloves'])||!empty($_SESSION['bibs'])||!empty($_SESSION['goggles'])||!empty($_SESSION['sled'])) {
-    echo "You have the following items in your cart: /n";
+    echo "You have the following items in your cart: <br>";
 }
-if (isset($_SESSION['boots'])) {
-    echo $_SESSION["boots"];
-} 
-if (isset($_SESSION['gloves'])) {
-    echo $_SESSION["gloves"];
-} 
-if (isset($_SESSION['bibs'])) {
-    echo $_SESSION["bibs"];
-} 
-if (isset($_SESSION['goggles'])) {
-    echo $_SESSION["goggles"];
-} 
-if (isset($_SESSION['sled'])) {
-    echo $_SESSION["sled"];
-} 
 else{
     echo "Your cart is empty";
 }
+if (isset($_SESSION['boots'])) {
+    echo $_SESSION["boots"]."<br>";
+} 
+if (isset($_SESSION['gloves'])) {
+    echo $_SESSION["gloves"]."<br>";
+} 
+if (isset($_SESSION['bibs'])) {
+    echo $_SESSION["bibs"]."<br>";
+} 
+if (isset($_SESSION['goggles'])) {
+    echo $_SESSION["goggles"]."<br>";
+} 
+if (isset($_SESSION['sled'])) {
+    echo $_SESSION["sled"]."<br>";
+} 
+
   ?>
 </div>
 
