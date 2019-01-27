@@ -42,19 +42,6 @@ session_start();
     </table>
   <input type="submit">
 </div>
-
-
-
-<div class="bg_img-1">
-  <a href="confirmation.php">
-  <div class="caption">
-  <span class="border">Submit</span>
-  </div>
-  </a>
-</div>
-
-
-
 </body>
 </html>
 
