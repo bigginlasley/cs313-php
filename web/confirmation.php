@@ -45,5 +45,18 @@ session_start();
     ?>
   
 </div>
+
+<div class="bg_img-1">
+  <a href="browse_items.php">
+  <div class="caption">
+  <span class="border">Back to Store</span>
+  </div>
+  </a>
+  <br>
+
+
+</div>
+
+
 </body>
 </html>
