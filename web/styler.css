@@ -24,9 +24,6 @@ body, html {
   min-height: 80%;
 }
 
-input {
-  float: left;
-}
 
 .caption {
   position: absolute;

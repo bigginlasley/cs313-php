@@ -22,19 +22,33 @@ session_start();
 <div class="d">
   <h3 class="p1">Shipping Address</h3>
   <form action="confirmation.php" method="post">
-  Street Address: <input type="text" name="address"><br>
-  City:           <input type="text" name="city"><br>
-  State:          <input type="text" name="state"><br>
-  Zip:            <input type="text" name="zip"><br>
+  <table>
+        <tr>
+            <th>Street Address: </th>
+            <th><input type="text" name="address"></th>
+        </tr>
+        <tr>
+            <th>City: </th>
+            <th><input type="text" name="city"></th>
+        </tr>
+        <tr>
+            <th>State: </th>
+            <th><input type="text" name="state"></th>
+        </tr>
+        <tr>
+            <th>Zip: </th>
+            <th><input type="text" name="zip"></th>
+        </tr>
+    </table>
   <input type="submit">
 </div>
 
 
 
 <div class="bg_img-1">
-  <a href="view_cart.php">
+  <a href="confirmation.php">
   <div class="caption">
-  <span class="border">Back</span>
+  <span class="border">Submit</span>
   </div>
   </a>
 </div>
