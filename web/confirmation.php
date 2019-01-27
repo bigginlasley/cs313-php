@@ -38,10 +38,10 @@ session_start();
     if (isset($_SESSION['sled'])) {
         echo $_SESSION["sled"]."<br>";
     } 
-    echo "shipping address:<br> ". $_POST["address"]. "<br>";
+    echo "<br> shipping address:<br> ". $_POST["address"]. "<br>";
     echo $_POST["city"]. "<br>";
     echo $_POST["state"]. "<br>";
-    echo $_POST["zi"]. "<br>";
+    echo $_POST["zip"]. "<br>";
     ?>
   
 </div>
