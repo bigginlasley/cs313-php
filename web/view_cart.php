@@ -16,7 +16,7 @@ session_start();
 
 
 <div class="bg_img-1">
-<a href="Checkout.php">
+<a href="browse_items.php">
 <div class="caption">
   <span class="border">Back to Store</span>
   </div>
