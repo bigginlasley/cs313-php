@@ -24,6 +24,11 @@ body, html {
   min-height: 80%;
 }
 
+input {
+  float: right;
+  clear: both;
+}
+
 .caption {
   position: absolute;
   left: 0;
