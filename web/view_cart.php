@@ -40,7 +40,8 @@ if (isset($_SESSION['gloves'])) {
     echo $_SESSION["gloves"]."<br>";
 } 
 if (isset($_SESSION['bibs'])) {
-    echo $_SESSION["bibs"]."<br>";
+    echo $_SESSION["bibs"];
+    echo '<button Name="bibs" id="bibs" onClick='.'location.href="?bibs=1"'.'>add to cart</button>';
 } 
 if (isset($_SESSION['goggles'])) {
     echo $_SESSION["goggles"]."<br>";
@@ -52,6 +53,7 @@ if (isset($_SESSION['sled'])) {
   ?>
 </div>
 
+<button Name="bibs" id="bibs" onClick='location.href="?bibs=1"'>add to cart</button>
 
 
 <div class="bg_img-1">
