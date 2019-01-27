@@ -34,24 +34,24 @@ else{
     echo "Your cart is empty";
 }
 if (isset($_SESSION['boots'])) {
-    echo '<button Name="boots" id="boots" onClick='.'location.href="?boots=0"'.'>remove</button>';
+    echo '<button Name="boots" id="boots" onClick='.'location.href="?boots=1"'.'>remove</button>';
     echo $_SESSION["boots"]."<br>";
 } 
 if (isset($_SESSION['gloves'])) {
-    echo '<button Name="gloves" id="gloves" onClick='.'location.href="?gloves=0"'.'>remove</button>';
+    echo '<button Name="gloves" id="gloves" onClick='.'location.href="?gloves=1"'.'>remove</button>';
     echo $_SESSION["gloves"]."<br>";
 } 
 if (isset($_SESSION['bibs'])) {
-    echo '<button Name="bibs" id="bibs" onClick='.'location.href="?bibs=0"'.'>remove</button>';
+    echo '<button Name="bibs" id="bibs" onClick='.'location.href="?bibs=1"'.'>remove</button>';
     echo $_SESSION["bibs"];
     
 } 
 if (isset($_SESSION['goggles'])) {
-    echo '<button Name="goggles" id="goggles" onClick='.'location.href="?goggles=0"'.'>remove</button>';
+    echo '<button Name="goggles" id="goggles" onClick='.'location.href="?goggles=1"'.'>remove</button>';
     echo $_SESSION["goggles"]."<br>";
 } 
 if (isset($_SESSION['sled'])) {
-    echo '<button Name="sled" id="sled" onClick='.'location.href="?sled=0"'.'>remove</button>';
+    echo '<button Name="sled" id="sled" onClick='.'location.href="?sled=1"'.'>remove</button>';
     echo $_SESSION["sled"]."<br>";
 } 
 
@@ -83,7 +83,7 @@ function setVar($name)
 
 </div>
 
-<button Name="bibs" id="bibs" onClick='location.href="?bibs=1"'>add to cart</button>
+
 
 
 <div class="bg_img-1">
