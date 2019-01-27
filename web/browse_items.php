@@ -16,7 +16,7 @@ function setVar($name)
     switch($name)
     {
         case "boots":
-            $_SESSION["boot"] = "Adrenaline GTX Boot";
+            $_SESSION["boots"] = "Adrenaline GTX Boot";
             echo "$name function works";
             break;
         case "gloves":
