@@ -12,6 +12,12 @@ session_start();
 
 <body data-gr-c-s-loaded="true">
 
+<?php 
+$street = htmlspecialchars($_POST["address"]);
+$cit = htmlspecialchars($_POST["city"]);
+$stat = htmlspecialchars($_POST["state"]);
+$zp = htmlspecialchars($_POST["zp"]);
+?>
 
 <div class="bg_img-2">
 <div class="caption">
@@ -38,10 +44,10 @@ session_start();
     if (isset($_SESSION['sled'])) {
         echo $_SESSION["sled"]."<br>";
     } 
-    echo "<br> shipping address:<br> ". $_POST["address"]. "<br>";
-    echo $_POST["city"]. "<br>";
-    echo $_POST["state"]. "<br>";
-    echo $_POST["zip"]. "<br>";
+    echo "<br> shipping address:<br> $street <br>";
+    echo "$cit <br>";
+    echo "$stat <br>";
+    echo "$z <br>";
     ?>
   
 </div>
