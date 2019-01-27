@@ -88,7 +88,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/boot.jpeg" alt="boots" height="256" width="256">
                             </div>
-                            <button Name="boots">add to cart</button>
+                            <button Name="boots" id="boots">add to cart</button>
                         </div>
             </td>
             <td align="center">
@@ -96,7 +96,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/glove.jpg" alt="gloves" height="256" width="256">
                             </div>
-                                <button Name="gloves">add to cart</button>
+                                <button Name="gloves" id="gloves">add to cart</button>
                             
                         </div>
             </td>
@@ -111,7 +111,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/lochsa.jpeg" alt="bibs" height="256" width="256">
                             </div>
-                            <button Name="bibs">add to cart</button>
+                            <button Name="bibs" id="bibs">add to cart</button>
                     </div>
             </td>
             <td align="center">
@@ -119,7 +119,7 @@ if($_GET)
                             <div>
                                     <img src ="pictures/goggles.jpeg" alt="goggles" height="256" width="256">
                             </div>
-                            <button Name="goggles">add to cart</button>
+                            <button Name="goggles" id="goggles">add to cart</button>
                         </div>
             </td>
         </tr>
@@ -140,7 +140,7 @@ if($_GET)
                                         <div>
                                                 <img src ="pictures/sled.png" alt="bibs" height="256" width="256">
                                         </div>
-                                        <button Name="sled">add to cart</button>
+                                        <button Name="sled" id="sled">add to cart</button>
                                 </div>
                         </td>
                     </tr>
