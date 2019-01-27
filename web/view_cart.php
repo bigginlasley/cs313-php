@@ -56,11 +56,13 @@ if (isset($_SESSION['sled'])) {
   <span class="border">Checkout</span>
   </div>
   </a>
+  <div>
   <a href="browse_items.php">
   <div class="caption">
   <span class="border">Back to Store</span>
   </div>
   </a>
+  </div>
 </div>
 
 
