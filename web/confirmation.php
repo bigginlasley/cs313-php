@@ -16,7 +16,7 @@ session_start();
 $street = htmlspecialchars($_POST["address"]);
 $cit = htmlspecialchars($_POST["city"]);
 $stat = htmlspecialchars($_POST["state"]);
-$zp = htmlspecialchars($_POST["zp"]);
+$zp = htmlspecialchars($_POST["zip"]);
 ?>
 
 <div class="bg_img-2">
