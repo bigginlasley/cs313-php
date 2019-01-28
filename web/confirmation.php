@@ -47,7 +47,7 @@ $zp = htmlspecialchars($_POST["zip"]);
     echo "<br> shipping address:<br> $street <br>";
     echo "$cit <br>";
     echo "$stat <br>";
-    echo "$z <br>";
+    echo "$zp <br>";
     ?>
   
 </div>
