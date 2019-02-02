@@ -1,5 +1,3 @@
-# CREATE DATABASE grouper;
-
 CREATE TABLE person
 (
     personid SERIAL NOT NULL PRIMARY KEY,
@@ -15,14 +13,24 @@ CREATE TABLE person
     
 );
 
-CREATE TABLE currentActivity
+CREATE TABLE Activity
 (
-    cActivityId SERIAL NOT NULL PRIMARY KEY,
-    cActivityName VARCHAR(50) NOT NULL,
-    cActivityType VARCHAR(50) NOT NULL,
-    cActivityTime DATETIME NOT NULL,
-    cActivityCity VARCHAR(50) NOT NULL,
-    cActivityState VARCHAR(20) NOT NULL,
-    cActivityZip VARCHAR(15) NOT NULL,
-    cActivityAddress VARCHAR(100)
+    activityId SERIAL NOT NULL PRIMARY KEY,
+    activityName VARCHAR(50) NOT NULL,
+    activityType VARCHAR(50) NOT NULL,
+    activityTime DATETIME NOT NULL,
+    activityCity VARCHAR(50) NOT NULL,
+    activityState VARCHAR(20) NOT NULL,
+    activityZip VARCHAR(15) NOT NULL,
+    activityAddress VARCHAR(100),
+    activityCapacity INT NOT NULL,
+    activityCount INT NOT NULL
+);
+
+CREATE TABLE creator
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    user_id INT NOT NULL REFERENCES person(personid),
+    activity_id INT NOT NULL REFERENCES Activity(activityId),
+    createTime DATETIME NOT NULL
 );
