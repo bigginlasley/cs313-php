@@ -6,11 +6,10 @@ CREATE TABLE person
     email VARCHAR(40) NOT NULL,
     usrname VARCHAR(30) NOT NULL UNIQUE,
     is_male BOOLEAN NOT NULL,
-    personAddress VARCHAR(100),
+    personAddress VARCHAR(100) NOT NULL,
     personCity VARCHAR(40) NOT NULL,
     PersonState VARCHAR(20) NOT NULL,
-    Personzip VARCHAR(15) NOT NULL,
-    
+    Personzip VARCHAR(15) NOT NULL 
 );
 
 CREATE TABLE Activity
@@ -18,7 +17,7 @@ CREATE TABLE Activity
     activityId SERIAL NOT NULL PRIMARY KEY,
     activityName VARCHAR(50) NOT NULL,
     activityType VARCHAR(50) NOT NULL,
-    activityTime DATETIME NOT NULL,
+    activityTime TIMESTAMP NOT NULL,
     activityCity VARCHAR(50) NOT NULL,
     activityState VARCHAR(20) NOT NULL,
     activityZip VARCHAR(15) NOT NULL,
@@ -30,7 +29,12 @@ CREATE TABLE Activity
 CREATE TABLE creator
 (
     id SERIAL NOT NULL PRIMARY KEY,
-    user_id INT NOT NULL REFERENCES person(personid),
+    user_id int,
+    FOREIGN KEY (user_id) REFERENCES person(personid),
     activity_id INT NOT NULL REFERENCES Activity(activityId),
-    createTime DATETIME NOT NULL
+    createTime TIMESTAMP NOT NULL
 );
+
+
+
+-- user_id INT NOT NULL REFERENCES person(personid);
