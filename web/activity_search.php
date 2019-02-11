@@ -13,10 +13,7 @@ $db = get_db();
 
 <?php
 
-function setVar($name, $info)
-{
-    $_SESSION["activity"]
-}
+
 
 ?>
 
