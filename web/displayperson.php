@@ -35,7 +35,6 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
     </tr>
 
     <?php
-    echo "$lname";
     echo "Results listed below: <br>";
     if (isset($_SESSION['lname'])) {
 
