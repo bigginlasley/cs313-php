@@ -16,7 +16,7 @@ $db = get_db();
 
 <?php 
 $fname = $_SESSION['fname'] = htmlspecialchars($_POST["firstname"]);
-$lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
+$lname = $_SESSION['lname'] = htmlspecialchars($_POST["lname"]);
 ?>
 
 <div class="bg_img-2">
