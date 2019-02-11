@@ -16,7 +16,9 @@ $db = get_db();
 
 <?php 
 $fname = $_SESSION['fname'] = htmlspecialchars($_POST["firstname"]);
-$lname = $_SESSION['lname'] = htmlspecialchars($_POST["lname"]);
+$lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
+
+
 ?>
 
 <div class="bg_img-2">
@@ -33,6 +35,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lname"]);
     </tr>
 
     <?php
+    echo "$lname";
     echo "Results listed below: <br>";
     if (isset($_SESSION['lname'])) {
 
