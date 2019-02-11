@@ -11,10 +11,7 @@ $db = get_db();
 <title>Person search</title>
 </head>
 
-<?php 
-$fname = $_SESSION['fname'] = htmlspecialchars($_POST["firstname"]);
-$lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
-?>
+
 
 <body data-gr-c-s-loaded="true">
 
