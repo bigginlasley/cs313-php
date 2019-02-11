@@ -39,7 +39,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
     echo "Results listed below: <br>";
     if (isset($_SESSION['lname'])) {
 
-        $statement = $db->prepare("SELECT * FROM person WHERE last_name = $lname");
+        $statement = $db->prepare("SELECT * FROM person WHERE last_name = '$lname'");
         $statement->execute();
         }
 
