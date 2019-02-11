@@ -48,7 +48,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
            $last = $row['last_name'];
            $email = $row['email'];
 
-            echo "<tr><th>$name</th><th>$time</th><th>$email</th></tr>";
+            echo "<tr><th>$first</th><th>$last</th><th>$email</th></tr>";
                      
        }
     ?>
