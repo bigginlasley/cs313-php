@@ -13,29 +13,14 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 
 
 <nav class="navbar navbar-inverse">
-	<ul class="nav navbar-nav">
-
-<?php
-// There are more clever ways to do this, but as we are iterating through
-// each item in the list, we check to see if the filename is equal to the
-// current one, and if so, we echo "active" into the class tag.
-// The active class will be used by the CSS to make that link look different.
-// Another way to use this same approach, but remove some of the redundancy
-// would be to add each page (including the page name, and the text for the
-// menu) into an array. Then here, we could loop over that array and check
-// the page name from that iteration in the loop vs the php filename.
-?>
-
-		<li class="nav-item <?php if ($file === 'about') echo 'active' ?>">
-			<a href="about.php">About Us</a>
-		</li>
-
-		<li class="nav-item <?php if ($file === 'home') echo 'active' ?>">
-			<a href="home.php">Home</a>
-		</li>
-
-		<li class="nav-item <?php if ($file === 'login') echo 'active' ?>">
-			<a href="login.php">Login</a>
-		</li>
-	<ul>
+    <ul>
+        <li><a class="active" href="LFG.php">Home</a></li>
+        <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Search</a>
+        <div class="dropdown-content">
+        <a href="person_search.php">By Person</a>
+        <a href="activity_search.php">By Activity</a></li>
+        <li class="floatright"><button class="clicker" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button></li>
+        <li class="floatright"><button class="clicker" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></li>
+    </ul>
 </nav>

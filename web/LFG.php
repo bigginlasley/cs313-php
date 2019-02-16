@@ -20,16 +20,7 @@ require("navbar.php");
 ?>
 
 
-    <ul>
-        <li><a class="active" href="LFG.php">Home</a></li>
-        <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Search</a>
-        <div class="dropdown-content">
-        <a href="person_search.php">By Person</a>
-        <a href="activity_search.php">By Activity</a></li>
-        <li class="floatright"><button class="clicker" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button></li>
-        <li class="floatright"><button class="clicker" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></li>
-    </ul>
+
         
     <div class="bg_img-1">
         <div class="caption">
