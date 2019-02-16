@@ -16,7 +16,7 @@ $db = get_db();
 <body data-gr-c-s-loaded="true">
 
 <?php
-require("nav.php");
+require("navbar.php");
 ?>
 
 
