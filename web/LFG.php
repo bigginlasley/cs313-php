@@ -11,7 +11,15 @@ $db = get_db();
 <title>LFG</title>
 </head>
 
+
+
 <body data-gr-c-s-loaded="true">
+
+<?php
+require("nav.php");
+?>
+
+
     <ul>
         <li><a class="active" href="LFG.php">Home</a></li>
         <li class="dropdown">
