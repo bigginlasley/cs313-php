@@ -78,12 +78,12 @@ $db = get_db();
 
       <div id="id02" class="modal">
   
-        <form class="modal-content animate" action="/action_page.php">
+      <form class="modal-content animate" action="LFG.php" method="POST">
           
       
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+          <div class="holder">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
       
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
@@ -94,7 +94,7 @@ $db = get_db();
             </label>
           </div>
       
-          <div class="container" style="background-color:#f1f1f1">
+          <div class="holder" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cnclbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
