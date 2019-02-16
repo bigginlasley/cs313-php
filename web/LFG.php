@@ -8,7 +8,7 @@ $db = get_db();
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="styler.css" rel="stylesheet" type="text/css"/>
-<title>Person search</title>
+<title>LFG</title>
 </head>
 
 <body data-gr-c-s-loaded="true">
