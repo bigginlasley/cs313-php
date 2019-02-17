@@ -38,12 +38,12 @@ $db = get_db();
 
 
         try{
-            $query = 'INSERT INTO activity(activity_name, activity_type, activity_time, activity_city, activity_state, activity_zip, activity_address, activity_capacity, activity_count) VALUES(:activity_name, :activity_type, :activity_time, :activity_city, :activity_state, :activity_zip, :activity_address, :activity_capacity, :activity_count)';
+            $query = 'INSERT INTO activity(activity_name, activity_type, activity_city, activity_state, activity_zip, activity_address, activity_capacity, activity_count, time) VALUES(:activity_name, :activity_type, :activity_city, :activity_state, :activity_zip, :activity_address, :activity_capacity, :activity_count, :time)';
             $statement =$db->prepare($query);
 
             $statement->bindValue(':activity_name', $name);
             $statement->bindValue(':activity_type', $activity);
-            $statement->bindValue(':activity_time', $time);
+            $statement->bindValue(':time', $time);
             $statement->bindValue(':activity_capacity', $capacity);
             $statement->bindValue(':activity_address', $address);
             $statement->bindValue(':activity_city', $city);
