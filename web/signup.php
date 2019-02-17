@@ -4,6 +4,14 @@ require "dbConnect.php";
 $db = get_db();
 ?>
 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styler.css" rel="stylesheet" type="text/css"/>
+<title>sign up</title>
+</head>
 
 
 <div id="id01" class="modal">
