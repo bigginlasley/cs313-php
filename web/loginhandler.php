@@ -7,7 +7,7 @@ $db = get_db();
 <?php
     $username=$_POST['username'];
     $password=$_POST['psw'];
-    
+
 echo"$username , $password";
 
 try{
@@ -19,13 +19,15 @@ try{
     $username = mysql_real_escape_string($username);
     $password = mysql_real_escape_string($password);
 
-    echo"$username , $password";
+    $statement = $db->prepare("SELECT * FROM person WHERE usrname ='$username' and password ='$password'");
+    $statement->execute();
+   
+    $count=0;
 
-    $sql="SELECT * FROM person WHERE usrname='$username' and password='$password';";
-    $result=mysql_query($sql,$db);
-
-    $count=mysql_num_rows($result);
-
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+    {
+        $count++;
+    }
 if($count==1){
     session_start();
     $_SESSION['loggedin'] = true;
@@ -43,3 +45,5 @@ die();
 
 ?>
 
+
+"SELECT * FROM person WHERE usrname='$username' and password='$password'"
