@@ -64,7 +64,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
        {
            $name = $row['activity_name'];
-           $time = $row['activity_time'];
+           $time = $row['time'];
 
             echo "<tr><th>$name</th><th>$time</th></tr>";
                      
