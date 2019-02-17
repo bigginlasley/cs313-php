@@ -3,6 +3,7 @@ session_start();
 require "dbConnect.php";
 $db = get_db();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,7 @@ $db = get_db();
 <title>sign up</title>
 </head>
 
-
+<body data-gr-c-s-loaded="true">
 <div id="id01" class="modal">
         <form class="modal-content" id="sign_up" action="LFG.php" method="POST">
           <div class="holder">
@@ -57,3 +58,6 @@ $db = get_db();
           </div>
         </form>
       </div>
+      
+      </body>
+</html>
