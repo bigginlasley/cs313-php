@@ -15,7 +15,7 @@ $usrname = $_SESSION['username'];
 
 <body data-gr-c-s-loaded="true">
 <div id="id01" class="modal2">
-        <form class="modal2-content" id="sign_up" action="loginhandler.php" method="POST">
+        <form class="modal2-content" id="sign_up" action="activityhandler.php" method="POST">
           <div class="holder">
             <h1>Create Activity</h1>
             <p>Please fill in this form to create an Activity.</p>
