@@ -53,7 +53,7 @@ $usrname = $_SESSION['username'];
     
       <div id="id02" class="modal">
   
-      <form class="modal-content animate" id="login" action="LFG.php" method="POST">
+      <form class="modal-content animate" id="login" action="loginhandler.php" method="POST">
           
       
           <div class="holder">
