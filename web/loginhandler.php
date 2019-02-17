@@ -15,7 +15,7 @@ try{
     $password = mysql_real_escape_string($password);
 
     $sql="SELECT * FROM person WHERE usrname='$username' and password='$password'";
-    $result=mysql_query($sql);
+    $result=mysql_query($sql,$db);
 
     $count=mysql_num_rows($result);
 
