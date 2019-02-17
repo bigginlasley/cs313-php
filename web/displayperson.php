@@ -2,6 +2,8 @@
 session_start();
 require "dbConnect.php";
 $db = get_db();
+$usrname = $_SESSION['username'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,6 +15,19 @@ $db = get_db();
 </head>
 
 <body data-gr-c-s-loaded="true">
+
+<ul>
+        <li><a class="active" href="LFG.php">Home</a></li>
+        <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Search</a>
+        <div class="dropdown-content">
+        <a href="person_search.php">By Person</a>
+        <a href="activity_search.php">By Activity</a></li>
+        <li><a href="create_activity.php">Create Activity</a></li>
+        <?php
+        echo "<li class=\"floatright\"><a href=\"javascript:void(0)\">$usrname</a></li>";
+        ?>
+  </ul>
 
 <?php 
 $fname = $_SESSION['fname'] = htmlspecialchars($_POST["firstname"]);

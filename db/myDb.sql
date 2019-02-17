@@ -5,11 +5,11 @@ CREATE TABLE person
     first_name VARCHAR(20) NOT NULL,
     email VARCHAR(40) NOT NULL,
     usrname VARCHAR(30) NOT NULL UNIQUE,
-    is_male BOOLEAN NOT NULL,
     person_address VARCHAR(100) NOT NULL,
     person_city VARCHAR(40) NOT NULL,
     person_state VARCHAR(20) NOT NULL,
     person_zip VARCHAR(15) NOT NULL 
+    , password VARCHAR(100)
 );
 
 CREATE TABLE activity
@@ -18,13 +18,13 @@ CREATE TABLE activity
     , activity_name VARCHAR(50) NOT NULL
     , activity_type int
     , FOREIGN KEY (activity_type) REFERENCES type_activity(type_of_activity_id)
-    , activity_time TIMESTAMP NOT NULL
     , activity_city VARCHAR(50) NOT NULL
     , activity_state VARCHAR(20) NOT NULL
     , activity_zip VARCHAR(15) NOT NULL
     , activity_address VARCHAR(100)
     , activity_capacity INT NOT NULL
     , activity_count INT NOT NULL
+    , time VARCHAR(50)
 );
 
 CREATE TABLE creator
@@ -86,6 +86,3 @@ VALUES(2, 1, '2019-09-02 14:45:00');
 
 INSERT INTO creator (user_id, activity_id, createTime)
 VALUES(3, 2, '2019-09-02 14:45:00');
-
-SELECT * FROM activity a 
-JOIN type_activity ta ON a. 
