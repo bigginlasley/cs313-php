@@ -38,4 +38,3 @@ die();
 ?>
 
 
-"SELECT * FROM person WHERE usrname='$username' and password='$password'"

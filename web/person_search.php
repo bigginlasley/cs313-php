@@ -24,10 +24,10 @@ $usrname = $_SESSION['username'];
         <div class="dropdown-content">
         <a href="person_search.php">By Person</a>
         <a href="activity_search.php">By Activity</a></li>
-
         <?php
         echo "<li class=\"floatright\"><a href=\"javascript:void(0)\">$usrname</a></li>";
         ?>
+
 
 
   </ul>
