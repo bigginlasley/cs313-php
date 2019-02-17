@@ -8,16 +8,8 @@ $db = get_db();
     $username=$_POST['username'];
     $password=$_POST['psw'];
 
-echo"$username , $password";
 
 try{
-    $username=$_POST['username'];
-    $password=$_POST['psw'];
-
-    $username = stripslashes($username);
-    $password = stripslashes($password);
-    $username = mysql_real_escape_string($username);
-    $password = mysql_real_escape_string($password);
 
     $statement = $db->prepare("SELECT * FROM person WHERE usrname ='$username' and password ='$password'");
     $statement->execute();
@@ -28,11 +20,11 @@ try{
     {
         $count++;
     }
-if($count==1){
-    session_start();
-    $_SESSION['loggedin'] = true;
-    $_SESSION['username'] = $username;
-}
+    if($count==1){
+        session_start();
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
+    }
 }
 catch(Exception $ex)
 {
