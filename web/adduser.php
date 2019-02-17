@@ -24,10 +24,10 @@ $f_name=$_POST['first_name'];
             $statement->bindValue(':first_name', $f_name);
             $statement->bindValue(':email', $email);
             $statement->bindValue(':usrname', $username);
-            $statement->bindValue(':address', $address);
-            $statement->bindValue(':city', $city);
-            $statement->bindValue(':state', $state);
-            $statement->bindValue(':zip', $zip);
+            $statement->bindValue(':person_address', $address);
+            $statement->bindValue(':person_city', $city);
+            $statement->bindValue(':person_state', $state);
+            $statement->bindValue(':person_zip', $zip);
             $statement->bindValue(':password', $password);
 
             $statement->execute();
