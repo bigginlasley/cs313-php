@@ -36,7 +36,7 @@ $l_name=$_POST['last_name'];
         ?>
 
         <li class="floatright"><button class="clicker" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button></li>
-        <li class="floatright"><button class="clicker" onclick="location.href='LFG.php';">Sign Up</button></li>
+        <li class="floatright"><button class="clicker" onclick="location.href='signup.php';">Sign Up</button></li>
 </ul>
 
 
