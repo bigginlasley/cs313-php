@@ -5,6 +5,9 @@ $db = get_db();
 ?>
 
 <?php
+
+echo"$username , $password";
+
 try{
     $username=$_POST['username'];
     $password=$_POST['psw'];
@@ -14,7 +17,9 @@ try{
     $username = mysql_real_escape_string($username);
     $password = mysql_real_escape_string($password);
 
-    $sql="SELECT * FROM person WHERE usrname='$username' and password='$password'";
+    echo"$username , $password";
+
+    $sql="SELECT * FROM person WHERE usrname='$username' and password='$password';";
     $result=mysql_query($sql,$db);
 
     $count=mysql_num_rows($result);
