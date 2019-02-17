@@ -33,7 +33,7 @@ $usrname = $_SESSION['username'];
                        </select>
 
             <label for="time"><b>Time of Event</b></label>
-            <input type="text" placeholder="Enter Event Time" name="time" required>
+            <input type="time" name="time" required>
             
             <label for="address"><b>Address</b></label>
             <input type="text" placeholder="Enter Address" name="address" required>
