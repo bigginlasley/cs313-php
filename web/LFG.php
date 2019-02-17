@@ -3,10 +3,7 @@ session_start();
 require "dbConnect.php";
 $db = get_db();
 
-$_SESSION['loggedin'];
-
-
-
+$usrname = $_SESSION['username'];
 
 ?>
 <!DOCTYPE html>
@@ -31,11 +28,17 @@ $_SESSION['loggedin'];
 
 
         <?php 
-        
+        if (isset($_SESSION['loggedin'])){
+           echo "<li class=\"floatright\"><a href=\"javascript:void(0)\">$usrname</a></li>";
+        }
+        else
+        {
+            echo '<li class="floatright"><button class="clicker" onclick="document.getElementById(\'id02\').style.display=\'block\'" style="width:auto;">Login</button></li>';
+            echo '<li class="floatright"><button class="clicker" onclick="location.href=\'signup.php\';">Sign Up</button></li>';
+        }
         ?>
 
-        <li class="floatright"><button class="clicker" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button></li>
-        <li class="floatright"><button class="clicker" onclick="location.href='signup.php';">Sign Up</button></li>
+       
 </ul>
 
 
