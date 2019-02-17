@@ -2,6 +2,7 @@
 session_start();
 require "dbConnect.php";
 $db = get_db();
+$usrname = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,17 +12,28 @@ $db = get_db();
 <title>Activity search</title>
 </head>
 
-<?php
 
 
 
-?>
+
 
 <body data-gr-c-s-loaded="true">
 
-<?php
-require("navbar.php");
-?>
+<ul>
+        <li><a class="active" href="LFG.php">Home</a></li>
+        <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Search</a>
+        <div class="dropdown-content">
+        <a href="person_search.php">By Person</a>
+        <a href="activity_search.php">By Activity</a></li>
+
+        <?php
+        echo "<li class=\"floatright\"><a href=\"javascript:void(0)\">$usrname</a></li>";
+        ?>
+
+
+  </ul>
+
 
 
 <div class="bg_img-1">
