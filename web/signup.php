@@ -13,8 +13,8 @@ $db = get_db();
 </head>
 
 <body data-gr-c-s-loaded="true">
-<div id="id01" class="modal" display="block">
-        <form class="modal-content" id="sign_up" action="LFG.php" method="POST">
+<div id="id01" class="modal2">
+        <form class="modal2-content" id="sign_up" action="LFG.php" method="POST">
           <div class="holder">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
