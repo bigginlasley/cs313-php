@@ -4,8 +4,7 @@ require "dbConnect.php";
 $db = get_db();
 
 $_SESSION['loggedin'];
-$f_name=$_POST['first_name'];
-$l_name=$_POST['last_name'];
+
 
 
 
