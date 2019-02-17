@@ -14,7 +14,7 @@ $db = get_db();
 
 <body data-gr-c-s-loaded="true">
 <div id="id01" class="modal2">
-        <form class="modal2-content" id="sign_up" action="LFG.php" method="POST">
+        <form class="modal2-content" id="sign_up" action="adduser.php" method="POST">
           <div class="holder">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
@@ -58,50 +58,5 @@ $db = get_db();
           </div>
         </form>
       </div>
-
-      <?php 
-      
-      if(isset($_POST['submit']))
-      {
-        $f_name=$_POST['first_name'];
-        $l_name=$_POST['last_name'];
-        $username=$_POST['username'];
-        $email=$_POST['email'];
-        $password=$_POST['password'];
-        $address=$_POST['address'];
-        $city=$_POST['city'];
-        $state=$_POST['state'];
-        $zip=$_POST['zip'];
-
-        try{
-            $query = 'INSERT INTO person(last_name, first_name, email, usrname, person_address, person_city, person_state, person_zip) VALUES(:last_name, :first_name, :email, :usrname, :person_address, :person_city, :person_state, :person_zip)';
-            $statement =$db->prepare($query);
-
-            $statement->bindValue(':last_name', $l_name);
-            $statement->bindValue(':first_name', $f_name);
-            $statement->bindValue(':email', $email);
-            $statement->bindValue(':usrname', $username);
-            $statement->bindValue(':password', $password);
-            $statement->bindValue(':address', $address);
-            $statement->bindValue(':city', $city);
-            $statement->bindValue(':state', $state);
-            $statement->bindValue(':zip', $zip);
-
-            $statement->execute();
-
-
-        }
-        catch(Exception $ex)
-        {
-            echo "Error with DB. Details: $ex";
-            die();
-        }
-
-
-      }
-
-      ?>
-
-
       </body>
 </html>
