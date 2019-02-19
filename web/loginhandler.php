@@ -7,9 +7,12 @@ $db = get_db();
 <?php
     $username=$_POST['username'];
     $password=$_POST['psw'];
+    #$password=password_verify();
 
 
 try{
+
+    
 
     $statement = $db->prepare("SELECT * FROM person WHERE usrname ='$username' and password ='$password'");
     $statement->execute();
@@ -18,9 +21,13 @@ try{
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
+        $checker=$row['password'];
+
+        $pass=password_verify($password, $checker);
+
         $count++;
     }
-    if($count==1){
+    if($pass==true){
         session_start();
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
