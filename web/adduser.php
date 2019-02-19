@@ -16,6 +16,8 @@ $f_name=$_POST['first_name'];
         $state=$_POST['state'];
         $zip=$_POST['zip'];
 
+        $password=password_hash($password, PASSWORD_DEFAULT);
+
         try{
             $query = 'INSERT INTO person(last_name, first_name, email, usrname, person_address, person_city, person_state, person_zip, password) VALUES(:last_name, :first_name, :email, :usrname, :person_address, :person_city, :person_state, :person_zip, :password)';
             $statement =$db->prepare($query);
