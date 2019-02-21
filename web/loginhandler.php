@@ -14,7 +14,7 @@ try{
 
     
 
-    $statement = $db->prepare("SELECT * FROM person WHERE usrname ='$username' and password ='$password'");
+    $statement = $db->prepare("SELECT password FROM  person WHERE usrname ='$username'");
     $statement->execute();
    
     $count=0;
@@ -27,7 +27,7 @@ try{
 
         $count++;
     }
-    if($pass==true){
+    if($pass){
         session_start();
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;

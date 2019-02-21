@@ -6,7 +6,7 @@ $db = get_db();
 
 
 <?php 
-$f_name=$_POST['first_name'];
+        $f_name=$_POST['first_name'];
         $l_name=$_POST['last_name'];
         $username=$_POST['username'];
         $email=$_POST['email'];
@@ -16,7 +16,7 @@ $f_name=$_POST['first_name'];
         $state=$_POST['state'];
         $zip=$_POST['zip'];
 
-        $password=password_hash($password, PASSWORD_DEFAULT);
+        $hashed_password=password_hash($password, PASSWORD_DEFAULT);
 
         try{
             $query = 'INSERT INTO person(last_name, first_name, email, usrname, person_address, person_city, person_state, person_zip, password) VALUES(:last_name, :first_name, :email, :usrname, :person_address, :person_city, :person_state, :person_zip, :password)';
@@ -30,7 +30,7 @@ $f_name=$_POST['first_name'];
             $statement->bindValue(':person_city', $city);
             $statement->bindValue(':person_state', $state);
             $statement->bindValue(':person_zip', $zip);
-            $statement->bindValue(':password', $password);
+            $statement->bindValue(':password', $hashed_password);
 
             $statement->execute();
 
