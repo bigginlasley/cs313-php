@@ -21,11 +21,14 @@ $db = get_db();
         {
             Echo "$custom";
             try{
-            $query="INSERT INTO type_activity(type_name) VALUES(:type_name)";
-            $statement=$db->prepare($query);
-            $statement->bindValue(':type_name', $custom);
-            $statment->execute();
             $activity=$custom;
+            $query='INSERT INTO type_activity(type_name) VALUES(:name)';
+            $statement=$db->prepare($query);
+            Echo "1";
+            $statement->bindValue(':name', $custom);
+            $statment->execute();
+            Echo "2";
+           
             }
             catch(Exception $ex)
             {
