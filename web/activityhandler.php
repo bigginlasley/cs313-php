@@ -21,7 +21,7 @@ $db = get_db();
         {
             try{
             $statement=$db->prepare('INSERT INTO type_activity(type_name) VALUES(:type_name)');
-            $statement->bindValue(':type_activity', $custom);
+            $statement->bindValue(':type_name', $custom);
             $statment->execute();
             $activity=$custom;
             }
@@ -34,7 +34,7 @@ $db = get_db();
 
 
         try{
-            $statement=$db->prepare('SELECT type_of_activity_id FROM type_activity WHERE type_activity=$activity');
+            $statement=$db->prepare('SELECT type_of_activity_id FROM type_activity WHERE type_name=$activity');
             $statement->execute();
             while($row=$statement->fetch(PDO::FETCH_ASSOC))
             {
