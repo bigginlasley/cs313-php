@@ -38,7 +38,7 @@ $db = get_db();
             $statement->execute();
             while($row=$statement->fetch(PDO::FETCH_ASSOC))
             {
-                $activity=row['type_of_activity_id'];
+                $activity=$row['type_of_activity_id'];
             }
         }
         catch(Excetion $ex)
