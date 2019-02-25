@@ -34,7 +34,7 @@ $db = get_db();
 
 
         try{
-            $statement=$db->prepare('SELECT type_of_activity_id FROM type_activity WHERE type_name=$activity');
+            $statement=$db->prepare("SELECT type_of_activity_id FROM type_activity WHERE type_name='$activity'");
             $statement->execute();
             while($row=$statement->fetch(PDO::FETCH_ASSOC))
             {
