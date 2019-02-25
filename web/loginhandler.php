@@ -7,7 +7,6 @@ $db = get_db();
 <?php
     $username=$_POST['username'];
     $password=$_POST['psw'];
-    #$password=password_verify();
 
 
 try{

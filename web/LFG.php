@@ -29,7 +29,14 @@ $usrname = $_SESSION['username'];
 
         <?php 
         if (isset($_SESSION['loggedin'])){
-           echo "<li class=\"floatright\"><a href=\"javascript:void(0)\">$usrname</a></li>";
+
+          echo " <li class=\"dropdown\">";
+          echo "<a href=\"javascript:void(0)\" class=\"dropbtn floatright\">$usrname</a>";
+          echo "<div class=\"dropdown-content\">";
+          echo "<a href=\"logout_handler.php\">Logout</a>";
+          echo "<a href=\"removeuser.php\">Delete User</a></li>";
+
+
         }
         else
         {
