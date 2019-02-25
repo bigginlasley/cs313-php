@@ -21,7 +21,6 @@ $usrname = $_SESSION['username'];
 <ul>
         <li><a class="active" href="LFG.php">Home</a></li>
 
-
         <?php 
         if (isset($_SESSION['loggedin'])){
 
@@ -37,8 +36,6 @@ $usrname = $_SESSION['username'];
           echo "<a href=\"person_search.php\">By Person</a>";
           echo "<a href=\"activity_search.php\">By Activity</a></li>";
           echo "<li><a href=\"create_activity.php\">Create Activity</a></li>";
-
-
         }
         else
         {

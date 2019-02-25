@@ -29,7 +29,11 @@ $usrname = $_SESSION['username'];
         <li><a href="create_activity.php">Create Activity</a></li>
 
         <?php
-        echo "<li class=\"floatright\"><a href=\"javascript:void(0)\">$usrname</a></li>";
+                  echo " <li class=\"dropdown floatright\">";
+                  echo "<a href=\"javascript:void(0)\" class=\"dropbtn\">$usrname</a>";
+                  echo "<div class=\"dropdown-content\">";
+                  echo "<a href=\"logout_handler.php\">Logout</a>";
+                  echo "<a href=\"removeuser.php\">Delete User</a></li>";
         ?>
 
 
