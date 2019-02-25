@@ -19,6 +19,7 @@ $db = get_db();
 
         if($custom != NULL)
         {
+            Echo "$custom";
             try{
             $query="INSERT INTO type_activity(type_name) VALUES(:type_name)";
             $statement=$db->prepare($query);
