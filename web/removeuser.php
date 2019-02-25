@@ -13,6 +13,9 @@ $query = "DELETE FROM person WHERE usrname='$username'";
 try{
 $statement=$db->prepare($query);
 $statement->execute();
+
+session_unset(); 
+session_destroy(); 
 }
 
 catch(Excetion $ex)
