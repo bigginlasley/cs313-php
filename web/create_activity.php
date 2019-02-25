@@ -26,10 +26,6 @@ $usrname = $_SESSION['username'];
 
             <label for="activity">Activity</label>
                        <select id="activity" name="activity">
-                         <option value="Lifting">Lifting</option>
-                         <option value="Basketball">Basketball</option>
-                         <option value="Bridge_Jumping">Bridge Jumping</option>
-                         <option value="Snowmobiling">Snowmobiling</option>
                          <?php
                          try{
                            $statement=$db->prepare('SELECT type_name FROM type_activity');
