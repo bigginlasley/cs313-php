@@ -30,8 +30,8 @@ $usrname = $_SESSION['username'];
         <?php 
         if (isset($_SESSION['loggedin'])){
 
-          echo " <li class=\"dropdown\">";
-          echo "<a href=\"javascript:void(0)\" class=\"dropbtn floatright\">$usrname</a>";
+          echo " <li class=\"dropdown floatright\">";
+          echo "<a href=\"javascript:void(0)\" class=\"dropbtn\">$usrname</a>";
           echo "<div class=\"dropdown-content\">";
           echo "<a href=\"logout_handler.php\">Logout</a>";
           echo "<a href=\"removeuser.php\">Delete User</a></li>";
