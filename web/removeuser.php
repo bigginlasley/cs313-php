@@ -2,13 +2,16 @@
 session_start();
 require "dbConnect.php";
 $db = get_db();
+?>
+
+<?php
 
 $usrname = $_SESSION['username'];
 
 $query = 'DELETE FROM person WHERE usrname=$usrname';
 
 try{
-$statement=$db ->prepare($query);
+$statement=$db->prepare($query);
 $statement->execute();
 }
 
