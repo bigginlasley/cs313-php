@@ -17,7 +17,7 @@ $db = get_db();
         $activity=$_POST["activity"];
         $custom=$_POST['custom'];
 
-        if($custom != null)
+        if($custom != NULL)
         {
             try{
             $statement=$db->prepare('INSERT INTO type_activity(type_name) VALUES(:type_name)');
