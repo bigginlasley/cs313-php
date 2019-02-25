@@ -15,26 +15,37 @@ $db = get_db();
         $capacity=$_POST['capacity'];
         $count=$_POST['count'];
         $activity=$_POST["activity"];
+        $custom=$_POST['custom'];
 
-        switch($activity)
+        if($custom != null)
         {
-            case "Lifting":
-                $activity = 1;
-                break;
-
-            case "Basketball":
-                $activity = 2;
-                break;
-
-            case "Bridge_Jumping":
-                $activity = 3;
-                break;
-
-            case "snowmobiling":
-                $activity = 4;
-                break;
+            try{
+            $statement=$db->prepare('INSERT INTO type_activity(type_name) VALUES(:type_name)');
+            $statement->bindValue(':type_activity', $custom);
+            $statment->execute();
+            $activity=$custom;
+            }
+            catch(Exception $ex)
+            {
+                echo "Error with DB. Details: $ex";
+                die();
+            }
         }
 
+
+        try{
+            $statement=$db->prepare('SELECT type_of_activity_id FROM type_activity WHERE type_activity=$activity');
+            $statement->execute();
+            while($row=$statement->fetch(PDO::FETCH_ASSOC))
+            {
+                $activity=row['type_of_activity_id'];
+            }
+        }
+        catch(Excetion $ex)
+        {
+            echo "Error with DB. Details: $ex";
+            die();
+        }
 
 
         try{
