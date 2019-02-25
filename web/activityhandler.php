@@ -20,7 +20,8 @@ $db = get_db();
         if($custom != NULL)
         {
             try{
-            $statement=$db->prepare('INSERT INTO type_activity(type_name) VALUES(:type_name)');
+            $query='INSERT INTO type_activity(type_name) VALUES(:type_name)';
+            $statement=$db->prepare($query);
             $statement->bindValue(':type_name', $custom);
             $statment->execute();
             $activity=$custom;
