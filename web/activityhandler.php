@@ -19,15 +19,15 @@ $db = get_db();
 
         if($custom != NULL)
         {
-            Echo "$custom";
+            
             try{
             $activity=$custom;
             $query='INSERT INTO type_activity(type_name) VALUES(:name)';
             $statement=$db->prepare($query);
-            Echo "1";
+            
             $statement->bindValue(':name', $custom);
-            $statment->execute();
-            Echo "2";
+            $statement->execute();
+            
            
             }
             catch(Exception $ex)
