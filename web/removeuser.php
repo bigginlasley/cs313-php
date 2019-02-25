@@ -6,9 +6,9 @@ $db = get_db();
 
 <?php
 
-$usrname = $_SESSION['username'];
+$username = $_SESSION['username'];
 
-$query = 'DELETE FROM person WHERE usrname=$usrname';
+$query = "DELETE FROM person WHERE usrname='$username'";
 
 try{
 $statement=$db->prepare($query);
@@ -22,5 +22,5 @@ catch(Excetion $ex)
 }
 
 header("Location: LFG.php");
-die();
+die(); 
 ?>
