@@ -58,29 +58,19 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
     echo "Results listed below: <br>";
     if (isset($_SESSION['activity'])) {
 
-        switch($activity)
-        {
-            case "Lifting":
-                $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = 1");
-                $statement->execute();
-                break;
-
-            case "Basketball":
-                $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = 2");
-                $statement->execute();
-                break;
-
-            case "Bridge_Jumping":
-                $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = 3");
-                $statement->execute();
-                break;
-
-            case "snowmobiling":
-                $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = 4");
-                $statement->execute();
-                break;
+        try{
+            $statement=$db->prepare("SELECT type_of_activity_id FROM type_activity WHERE type_name='$activity'");
+            $statement->execute();
+            while($row=$statement->fetch(PDO::FETCH_ASSOC))
+            {
+                $activity=$row['type_of_activity_id'];
+            }
         }
-
+        catch(Excetion $ex)
+        {
+            echo "Error with DB. Details: $ex";
+            die();
+        }
         
 
        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
