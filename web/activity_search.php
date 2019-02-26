@@ -21,17 +21,15 @@ $usrname = $_SESSION['username'];
 
 <ul>
         <li><a class="active" href="LFG.php">Home</a></li>
-        <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Search</a>
-        <div class="dropdown-content">
-        <a href="person_search.php">By Person</a>
-        <a href="activity_search.php">By Activity</a></li>
+        <li><a href="activity_search.php">Activity Search</a></li>
         <li><a href="create_activity.php">Create Activity</a></li>
+
 
         <?php
                   echo " <li class=\"dropdown floatright\">";
                   echo "<a href=\"javascript:void(0)\" class=\"dropbtn\">$usrname</a>";
                   echo "<div class=\"dropdown-content\">";
+                  echo "<a href=\"attending.php\">Attending</a>";
                   echo "<a href=\"logout_handler.php\">Logout</a>";
                   echo "<a href=\"removeuser.php\">Delete User</a></li>";
         ?>
