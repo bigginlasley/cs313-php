@@ -49,6 +49,7 @@ $usrname = $_SESSION['username'];
 
             <div>
             <label for="time"><b>Time of Event</b></label>
+            <br>
             <input type="time" name="time" required>
             <br>
             <br>
@@ -56,6 +57,7 @@ $usrname = $_SESSION['username'];
             
             <div>
             <label for="date"><b>Date</b></label>
+            <br>
             <input type="date" placeholder="Enter Date" name="date" required>
             <br>
             <br>
