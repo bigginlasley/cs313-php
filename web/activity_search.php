@@ -43,7 +43,7 @@ $usrname = $_SESSION['username'];
 
 <div class="bg_img-1">
         <div class="d4">
-          <div class="d1">
+          <div class="d5">
           
         <form action="display.php" method="post">
                        
