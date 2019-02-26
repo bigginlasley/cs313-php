@@ -16,6 +16,8 @@ $db = get_db();
         $count=$_POST['count'];
         $activity=$_POST["activity"];
         $custom=$_POST['custom'];
+        $date = $_POST['date'];
+        $actdate = $date . $time;
 
         if($custom != NULL)
         {
@@ -59,7 +61,7 @@ $db = get_db();
 
             $statement->bindValue(':activity_name', $name);
             $statement->bindValue(':activity_type', $activity);
-            $statement->bindValue(':time', $time);
+            $statement->bindValue(':time', $actdate);
             $statement->bindValue(':activity_capacity', $capacity);
             $statement->bindValue(':activity_address', $address);
             $statement->bindValue(':activity_city', $city);

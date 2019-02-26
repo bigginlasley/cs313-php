@@ -51,6 +51,9 @@ $usrname = $_SESSION['username'];
             <input type="time" name="time" required>
             <br>
             
+            <label for="date"><b>Date</b></label>
+            <input type="date" placeholder="Enter Date" name="date" required>
+
             <label for="address"><b>Address</b></label>
             <input type="text" placeholder="Enter Address" name="address" required>
 
