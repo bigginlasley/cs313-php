@@ -47,7 +47,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
 </div>
 
 <div class="d">
-  <h3 class="p1">Thank You</h3>
+  <h3 class="p1">Results</h3>
   <form action="adder_handler.php" method="post">
   <table>
     <tr>
@@ -62,7 +62,6 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
     </tr>
 
     <?php
-    echo "Results listed below: <br>";
     if (isset($_SESSION['activity'])) {
 
         try{
