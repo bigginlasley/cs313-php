@@ -50,8 +50,14 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
   <h3 class="p1">Thank You</h3>
   <table>
     <tr>
+        <th> Mark </th>
         <th> Activity Name </th>
+        <th> Activity Type </th>
         <th> Time </th>
+        <th> Activity Location </th>
+        <th> Capacity </th>
+        <th> Count </th>
+
     </tr>
 
     <?php
