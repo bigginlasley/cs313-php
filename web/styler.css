@@ -106,12 +106,12 @@ h3 {
 .d5 {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 100px 100px;
 
   position: absolute;
   left: 0;
   top: 50%;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
