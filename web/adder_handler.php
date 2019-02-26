@@ -6,7 +6,7 @@ $db = get_db();
 
 <?php
 
-$id=$_POST['$idbtn'];
+$id=$_POST['idbtn'];
 
 try{
     $statement=$db->prepare("SELECT * FROM activity WHERE activity_id='$id'");
