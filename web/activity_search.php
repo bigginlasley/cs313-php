@@ -67,6 +67,55 @@ $usrname = $_SESSION['username'];
                      
                        <input type="submit" value="Submit">
                      </form>
+
+                     <?php
+
+                      try{
+                        $statement = $db->prepare("SELECT * FROM activity");
+                        $statement->execute();
+
+                        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                        {
+                            $name = $row['activity_name'];
+                            $id = $row['activity_type'];
+                            $time = $row['time'];
+                            $location = $row['activity_address'];
+                            $cap = $row['activity_capacity'];
+                            $count = $row['activity_count'];
+
+                            try{
+                            $query = $db->prepare("SELECT type_name FROM type_activity WHERE type_of_activity_id = '$id'");
+                            $query->execute();
+                            while($row2 = $query->fetch(PDO::FETCH_ASSOC))
+                            {
+                              $activity = $row2['type_name'];
+                            }
+
+                            if($cap==$count)
+                            {
+                                echo "<tr><td>Full</td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
+                            }
+                            else
+                            {
+                                echo "<tr><td>
+                                </td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
+                            }
+                          }
+                          catch(Exception $ex)
+                          {
+                            echo "Error with DB. Details: $ex";
+                            die();
+                          }
+                                    
+                        }
+                      }
+                      catch(Exception $ex)
+                      {
+                        echo "Error with DB. Details: $ex";
+                        die();
+                      }
+                     ?>
+
         </div>
     </div> 
 
