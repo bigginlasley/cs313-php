@@ -75,7 +75,7 @@ $usrname = $_SESSION['username'];
                      </form>
 
 
-
+                    <form action="adder_handler.php" method="post">
                       <table>
                       <tr>
                           <th> Mark </th>
@@ -102,6 +102,7 @@ $usrname = $_SESSION['username'];
                             $location = $row['activity_address'];
                             $cap = $row['activity_capacity'];
                             $count = $row['activity_count'];
+                            $actID = $row['activity_id'];
 
                             try{
                             $query = $db->prepare("SELECT type_name FROM type_activity WHERE type_of_activity_id = '$id'");
@@ -117,7 +118,7 @@ $usrname = $_SESSION['username'];
                             }
                             else
                             {
-                                echo "<tr><td>
+                                echo "<tr><td><input type=\"radio\"name=\"idbtn\" value=\"$actID\">
                                 </td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
                             }
                           }
@@ -135,7 +136,9 @@ $usrname = $_SESSION['username'];
                         die();
                       }
                      ?>
+                     <tr><td><input type="submit" value="Submit"></td></tr>
               </table>
+                  </form>
         </div>
     </div> 
 

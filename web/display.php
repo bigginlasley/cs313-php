@@ -48,6 +48,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
 
 <div class="d">
   <h3 class="p1">Thank You</h3>
+  <form action="adder_handler.php" method="post">
   <table>
     <tr>
         <th> Mark </th>
@@ -109,7 +110,9 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
         }
     }
     ?>
+    <tr><td><input type="submit" value="Submit"></td></tr>
     </table>
+    </form>
   
 
 </div>
