@@ -17,7 +17,7 @@ $db = get_db();
         $activity=$_POST["activity"];
         $custom=$_POST['custom'];
         $date = $_POST['date'];
-        $actdate = $date . $time;
+        $actdate = $date . " " . $time;
 
         if($custom != NULL)
         {
