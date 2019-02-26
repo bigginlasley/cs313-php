@@ -17,12 +17,13 @@ body, html {
 .bg_img-1 {
   background-image: url("Side.jpg");
   min-height: 100%;
+  width: 100%;
 }
 
 .bg_img-2 {
   background-image: url("lookingdown.jpg");
   min-height: 80%;
-  width: 100%;
+
 }
 
 
