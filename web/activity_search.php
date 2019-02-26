@@ -45,12 +45,24 @@ $usrname = $_SESSION['username'];
         <div class="d4">
         <form action="display.php" method="post">
                        
-                       <label for="activity">activity</label>
+        <label for="activity">Activity</label>
                        <select id="activity" name="activity">
-                         <option value="Lifting">Lifting</option>
-                         <option value="Basketball">Basketball</option>
-                         <option value="Bridge_Jumping">Bridge Jumping</option>
-                         <option value="Snowmobiling">Snowmobiling</option>
+                         <?php
+                         try{
+                           $statement=$db->prepare('SELECT type_name FROM type_activity');
+                           $statement->execute();
+                           while($row = $statement->fetch(PDO::FETCH_ASSOC))
+                           {
+                             echo '<option value=' . $row['type_name']. '>' . $row['type_name'] . '</option>';
+                           }
+                         }
+                         catch(PDOException $ex)
+                         {
+                           echo "Error with DB. Details: $ex";
+                           die();
+                         }
+                         
+                         ?>
                        </select>
                      
                        <input type="submit" value="Submit">
