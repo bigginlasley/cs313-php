@@ -47,14 +47,17 @@ $usrname = $_SESSION['username'];
             <label for="custom">Custom Activity</label>
             <input type="text" name="custom">
 
+            <div>
             <label for="time"><b>Time of Event</b></label>
             <input type="time" name="time" required>
             <br>
+            </div>
             
+            <div>
             <label for="date"><b>Date</b></label>
             <input type="date" placeholder="Enter Date" name="date" required>
             <br>
-
+            </div>
             <label for="address"><b>Address</b></label>
             <input type="text" placeholder="Enter Address" name="address" required>
 
