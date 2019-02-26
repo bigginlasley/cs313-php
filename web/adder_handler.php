@@ -17,7 +17,7 @@ try{
         $count=$row['activity_count'];
         $count++;
         try{
-            $query=$db->prepare("UPDATE activity SET activity_count='$count' WHERE activity_id='$id");
+            $query=$db->prepare("UPDATE activity SET activity_count='$count' WHERE activity_id='$id'");
             $query->execute();
         }
         catch(Exception $ex )
