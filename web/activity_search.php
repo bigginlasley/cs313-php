@@ -71,7 +71,7 @@ $usrname = $_SESSION['username'];
                          ?>
                        </select>
 
-                       <input type="submit" value="Submit">
+                       <input type="submit" value="Filter">
                      </form>
 
 
