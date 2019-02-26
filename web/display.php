@@ -63,7 +63,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
             $statement->execute();
             while($row=$statement->fetch(PDO::FETCH_ASSOC))
             {
-                $activity=$row['type_of_activity_id'];
+                $id=$row['type_of_activity_id'];
             }
         }
         catch(Excetion $ex)
@@ -72,15 +72,21 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
             die();
         }
         try{
-            $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = '$activity'");
+            $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = '$id'");
             $statement->execute();
 
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
                 $name = $row['activity_name'];
                 $time = $row['time'];
+                $location = $row['activity_address'];
+                $cap = $row['activity_capacity'];
+                $count = $row['activity_count'];
 
-                    echo "<tr><td>$name</td><td>$time</td></tr>";
+        
+
+
+                echo "<tr><td>$name</td><tr><td>$activity</td><tr><td>$time</td><td>$location</td></tr><tr><td>$cap</td><tr><td>$count</td>";
                         
             }
         }
