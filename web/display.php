@@ -97,7 +97,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
                 }
                 else
                 {
-                    echo "<tr><td>
+                    echo "<tr><td><input type=\"radio\"name=\"idbtn\" value=\"$actID\">
                     </td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
                 }
                         
@@ -110,7 +110,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
         }
     }
     ?>
-    <tr><td><input type="submit" value="Submit"></td></tr>
+    <tr><td></td><td></td><td></td><td><input type="submit" value="Submit"></td></tr>
     </table>
     </form>
   
