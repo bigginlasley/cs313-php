@@ -68,6 +68,18 @@ $usrname = $_SESSION['username'];
                        <input type="submit" value="Submit">
                      </form>
 
+                      <table>
+                      <tr>
+                          <th> Mark </th>
+                          <th> Activity Name </th>
+                          <th> Activity Type </th>
+                          <th> Time </th>
+                          <th> Activity Location </th>
+                          <th> Capacity </th>
+                          <th> Count </th>
+
+                      </tr>
+
                      <?php
 
                       try{
@@ -115,7 +127,7 @@ $usrname = $_SESSION['username'];
                         die();
                       }
                      ?>
-
+              </table>
         </div>
     </div> 
 
