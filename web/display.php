@@ -90,9 +90,15 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
                 $count = $row['activity_count'];
 
         
-
-
-                echo "<tr><td>Mark</td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
+                if($cap==$count)
+                {
+                    echo "<tr><td>Full</td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
+                }
+                else
+                {
+                    echo "<tr><td>
+                    </td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
+                }
                         
             }
         }
