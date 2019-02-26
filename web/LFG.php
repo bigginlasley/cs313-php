@@ -28,7 +28,8 @@ $usrname = $_SESSION['username'];
           echo "<a href=\"javascript:void(0)\" class=\"dropbtn\">$usrname</a>";
           echo "<div class=\"dropdown-content\">";
           echo "<a href=\"logout_handler.php\">Logout</a>";
-          echo "<a href=\"removeuser.php\">Delete User</a></li>";
+          echo "<a href=\"removeuser.php\">Delete User</a>";
+          echo "<a href=\"attending.php\">Attending</a></li>";
 
           echo "<li class=\"dropdown\">";
           echo "<a href=\"javascript:void(0)\" class=\"dropbtn\">Search</a>";

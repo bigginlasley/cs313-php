@@ -88,7 +88,6 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
                 $location = $row['activity_address'];
                 $cap = $row['activity_capacity'];
                 $count = $row['activity_count'];
-                $actID = $row['activity_id'];
 
         
                 if($cap==$count)
