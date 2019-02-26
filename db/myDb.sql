@@ -33,6 +33,15 @@ CREATE TABLE type_activity
   , type_name VARCHAR(50) NOT NULL
 );
 
+CREATE TABLE person_activity
+(
+  id SERIAL NOT NULL PRIMARY KEY
+  , p_id int
+  , FOREIGN KEY (p_id) REFERENCES person(person_id)
+  , a_id int
+  , FOREIGN KEY (a_id) REFERENCES activity(activity_id)
+);
+
 
 INSERT INTO type_activity(type_name)
 VALUES('Lifting');
