@@ -45,13 +45,13 @@ $usrname = $_SESSION['username'];
         <div class="d4">
           <table>
             <tr>
-              <th>
+              
         <form action="display.php" method="post">
                        
         <label for="activity">Activity</label>
-</th>
-</tr>
-<tr>
+
+
+
   <td>
                        <select id="activity" name="activity">
                          <?php
