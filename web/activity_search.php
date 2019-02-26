@@ -136,7 +136,7 @@ $usrname = $_SESSION['username'];
                         die();
                       }
                      ?>
-                     <tr><td><input type="submit" value="Submit"></td></tr>
+                     <tr><td></td><td></td><td></td><td><input type="submit" value="Submit"></td></tr>
               </table>
                   </form>
         </div>
