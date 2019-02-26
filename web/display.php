@@ -80,7 +80,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
                 $name = $row['activity_name'];
                 $time = $row['time'];
 
-                    echo "<tr><th>$name</th><th>$time</th></tr>";
+                    echo "<tr><td>$name</th><th>$time</td></tr>";
                         
             }
         }
