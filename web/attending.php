@@ -69,11 +69,11 @@ $usrname = $_SESSION['username'];
                 $query2->execute();
                 while($row3=$query2->fetch(PDO::FETCH_ASSOC))
                 {
-                    $name = $row['activity_name'];
-                    $time = $row['time'];
-                    $location = $row['activity_address'];
-                    $cap = $row['activity_capacity'];
-                    $count = $row['activity_count'];
+                    $name = $row3['activity_name'];
+                    $time = $row3['time'];
+                    $location = $row3['activity_address'];
+                    $cap = $row3['activity_capacity'];
+                    $count = $row3['activity_count'];
                     echo "<tr><td>$name</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
                 }
 
