@@ -92,7 +92,7 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
         
 
 
-                echo "<tr><td>$name</td><tr><td>$activity</td><tr><td>$time</td><td>$location</td></tr><tr><td>$cap</td><tr><td>$count</td>";
+                echo "<tr><td>Mark</td><td>$name</td><td>$activity</td><td>$time</td><td>$location</td><td>$cap</td><td>$count</td></tr>";
                         
             }
         }
