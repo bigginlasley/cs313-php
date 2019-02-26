@@ -71,16 +71,24 @@ $lname = $_SESSION['lname'] = htmlspecialchars($_POST["lastname"]);
             echo "Error with DB. Details: $ex";
             die();
         }
-        
+        try{
+            $statement = $db->prepare("SELECT * FROM activity WHERE activity_type = '$activity'");
+            $statement->execute();
 
-       while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-       {
-           $name = $row['activity_name'];
-           $time = $row['time'];
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                $name = $row['activity_name'];
+                $time = $row['time'];
 
-            echo "<tr><th>$name</th><th>$time</th></tr>";
-                     
-       }
+                    echo "<tr><th>$name</th><th>$time</th></tr>";
+                        
+            }
+        }
+        catch(Exception $ex)
+        {
+            echo "Error with DB. Details: $ex";
+            die();
+        }
     }
     ?>
     </table>
