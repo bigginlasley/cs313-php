@@ -43,9 +43,8 @@ $usrname = $_SESSION['username'];
 
 <div class="bg_img-1">
         <div class="d4">
-          <table>
-            <tr>
-              <td>
+          <div>
+          
         <form action="display.php" method="post">
                        
         <label for="activity">Activity</label>
@@ -71,15 +70,11 @@ $usrname = $_SESSION['username'];
                          
                          ?>
                        </select>
-                        </td>
-                        </tr>
-                        <tr>
-                          <td>
+
                        <input type="submit" value="Submit">
                      </form>
-                        </td>
-                        </tr>
-                        </table>
+                        </div>
+
 
                       <table>
                       <tr>
