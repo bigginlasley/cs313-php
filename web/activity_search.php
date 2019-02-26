@@ -43,9 +43,16 @@ $usrname = $_SESSION['username'];
 
 <div class="bg_img-1">
         <div class="d4">
+          <table>
+            <tr>
+              <th>
         <form action="display.php" method="post">
                        
         <label for="activity">Activity</label>
+</th>
+</tr>
+<tr>
+  <td>
                        <select id="activity" name="activity">
                          <?php
                          try{
@@ -64,9 +71,15 @@ $usrname = $_SESSION['username'];
                          
                          ?>
                        </select>
-                     
+                        </td>
+                        </tr>
+                        <tr>
+                          <td>
                        <input type="submit" value="Submit">
                      </form>
+                        </td>
+                        </tr>
+                        </table>
 
                       <table>
                       <tr>
