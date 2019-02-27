@@ -10,13 +10,8 @@ $usrname = $_SESSION['username'];
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD:web/LFG/display.php
 <link href="../styler.css" rel="stylesheet" type="text/css"/>
 <title>Checkout</title>
-=======
-<link href="styler.css" rel="stylesheet" type="text/css"/>
-<title>Display</title>
->>>>>>> 650af44fa7b5b3a881179cb6f78b104448ec0cf0:web/display.php
 
 </head>
 
