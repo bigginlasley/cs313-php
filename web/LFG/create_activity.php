@@ -9,8 +9,13 @@ $usrname = $_SESSION['username'];
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD:web/LFG/create_activity.php
 <link href="../styler.css" rel="stylesheet" type="text/css"/>
 <title>sign up</title>
+=======
+<link href="styler.css" rel="stylesheet" type="text/css"/>
+<title>Create Activity</title>
+>>>>>>> 650af44fa7b5b3a881179cb6f78b104448ec0cf0:web/create_activity.php
 </head>
 
 <body data-gr-c-s-loaded="true">
