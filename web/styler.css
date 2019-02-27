@@ -15,13 +15,13 @@ body, html {
 
 }
 .bg_img-1 {
-  background-image: url("Side.jpg");
+  background-image: url("../pictures/Side.jpg");
   min-height: 100%;
   width: 100%;
 }
 
 .bg_img-2 {
-  background-image: url("lookingdown.jpg");
+  background-image: url("../pictures/lookingdown.jpg");
   min-height: 80%;
 
 }
